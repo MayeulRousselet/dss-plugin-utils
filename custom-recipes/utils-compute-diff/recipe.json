@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "label": "Compute diff",
+        "description": "Compute the diff between two datasets",
+        "icon": "fas fa-puzzle-piece"
+    },
+    "selectableFromDataset": "input_A_role",
+    "kind": "PYTHON",  
+
+    "inputRoles": [
+        {
+            "name": "input_A_role",
+            "label": "Input A",
+            "description": "what input A means",
+            "arity": "UNARY",
+            "required": true,
+            "acceptsDataset": true
+        },
+        {
+            "name": "input_B_role",
+            "label": "Input B",
+            "description": "what input B means",
+            "arity": "UNARY",
+            "required": true,
+            "acceptsDataset": true
+        }
+    ],
+
+    "outputRoles": [
+        {
+            "name": "main_output",
+            "label": "Diff",
+            "description": "what main output means",
+            "arity": "UNARY",
+            "required": true,
+            "acceptsDataset": true
+        }
+    ]
+}
