@@ -1,0 +1,32 @@
+{
+    "meta": {
+        "label": "Extract schema",
+        "description": "Extraction the columns names and types",
+        "icon": "fas fa-puzzle-piece"
+    },
+    "selectableFromDataset": "input_role",
+    "kind": "PYTHON",
+
+    "inputRoles": [
+        {
+            "name": "input_role",
+            "label": "Input dataset",
+            "description": "what input A means",
+            "arity": "UNARY",
+            "required": true,
+            "acceptsDataset": true
+        }
+    ],
+
+    "outputRoles": [
+        {
+            "name": "main_output",
+            "label": "Schema dataset",
+            "description": "what main output means",
+            "arity": "UNARY",
+            "required": true,
+            "acceptsDataset": true
+        }
+    ]
+
+}
